@@ -38,8 +38,8 @@ html {
 
 
 .hero {
-  background-image: url(https://picsum.photos/id/25/1920/1080);
-  background: linear-gradient(rgba(164, 91, 90, 0.65), rgba(154, 84, 83, 0.65)), rgba(0, 0, 0, 0.764) url("https://picsum.photos/id/381/1920/1080") no-repeat;
+  background-image: url(https://cdn.pixabay.com/photo/2023/02/03/05/22/superb-7764201_640.jpg);
+  background: linear-gradient(rgba(29, 29, 29, 0.65), rgba(23, 22, 22, 0.768)), rgba(0, 0, 0, 0.764) url("https://cdn.pixabay.com/photo/2023/02/03/05/22/superb-7764201_640.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -517,7 +517,27 @@ body.preloader-site {
   align-items: center;
   margin: 1rem;
 }
-
+.btn-cta1 {
+  background-color: #996E6D;
+  width: 400px;
+  height: 65px;
+  color: white;
+  font-size: 1.2rem;
+  border: 2px solid #996E6D;
+  border-radius: 10px;
+  align-items: center;
+  margin: 1rem auto; /* Set margin to 'auto' to center horizontally */
+  margin-left: 15rem; /* Left margin for larger screens */
+}
+@media only screen and (max-width: 768px) {
+  .btn-cta1 {
+    margin-left: auto; /* Reset left margin for smaller screens */
+    margin-right: auto; /* Reset right margin for smaller screens */
+    width: 80%; /* Set width to a percentage for responsiveness */
+    max-width: 400px; /* Set maximum width */
+    margin-top: 1rem; /* Add top margin for better spacing */
+  }
+}
 .cashbac-logo-inline {
   width: 160px;
   vertical-align: middle;
@@ -572,16 +592,16 @@ body.preloader-site {
 
 
 .foto1 {
-  background-image:url("../image/WhatsApp Image 2023-11-21 at 9.36.53 PM.jpeg");
+  background-image:url("../image/sanju-ban.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
-  min-height: 24rem;
+  min-height: 35rem;
 }
 
 
 .foto2 {
-  background-image:  url("../image/WhatsApp Image 2023-11-22 at 9.35.24 AM.jpeg");
+  background-image:  url("../image/sanju-4.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
@@ -589,36 +609,36 @@ body.preloader-site {
 }
 
 .foto3 {
-  background-image: url("../image/WhatsApp Image 2023-11-22 at 9.35.25 AM.jpeg");
+  background-image: url("../image/sanju-3.jpeg");
   background-size: cover;
   background-position: top;
   background-repeat:no-repeat;
-  min-height: 24rem;
+  min-height: 20rem;
 }
 
 .foto4 {
-  background-image:url("../image/WhatsApp Image 2023-11-22 at 9.35.27 AM.jpeg");
+  background-image:url("../image/sanju-2.jpeg");
   background-size: cover;
   background-position: top;
   background-repeat:no-repeat;
-  min-height: 24rem;
+  min-height: 30rem;
 }
 
 .foto5 {
-  background-image:url("../image/WhatsApp Image 2023-11-22 at 9.49.57 AM.jpeg");
+  background-image:url("../image/sanju-6.jpg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
-  min-height: 24rem;
+  min-height: 30rem;
 }
 
 
 .foto6 {
-  background-image: url("../image/WhatsApp Image 2023-11-22 at 9.49.56 AM.jpeg");
+  background-image: url("../image/Untitled.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
-  min-height: 24rem;
+  min-height: 30rem;
 }
 
 @media (max-width: 768px) {
@@ -665,6 +685,19 @@ body.preloader-site {
   text-align: center;
   padding: 10px;
 }
+
+.whatsapp {
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #4dc247;
+  align-items: center;
+  margin: 1rem;
+  color: white;
+  background: #25D366;
+  background: -moz-linear-gradient(45deg, #25D366 0%, #25D366 50%, #34af23 50%, #128C7E 50%, #128C7E 100%);
+}
+
+
 .instagram1{
   font-size: 1.2rem;
   border-radius: 10px;  
@@ -687,7 +720,18 @@ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75
     font-size: 1.2rem;
     border-radius: 10px;
     border: 2px solid #59a543;
-    width:  210px;
+    width:  290px;
+    height: 65px;
+    align-items: center;
+    margin: 1rem;
+  }
+  .whatsapp:hover {
+    color: white;
+    background-color: #59a543;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 2px solid #59a543;
+    width:  300px;
     height: 65px;
     align-items: center;
     margin: 1rem;
@@ -702,3 +746,14 @@ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75
     border-radius: 4px; /* Optional: Add rounded corners */
     z-index: 999;
   }
+  .welcome {
+    font-family: 'Bungee', cursive; /* Use Bungee font */
+    font-size: 2.5rem; /* Adjust font size as needed */
+    color: #ebe3e3; /* Adjust color as needed */
+    /* text-align: center; Center align the text */
+    /* margin-top: 20px; Adjust top margin as needed */
+    font-weight: 800;
+  }
+  
+  
+  
