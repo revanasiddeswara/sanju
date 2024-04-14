@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
       form.reset();
   });
 
+
   function sendFormData(formData) {
       const { name, email, tel, messages } = formData;
       const message = `Hi Sid's PixelVows\n\nName: ${name}\nEmail: ${email}\nContact: ${tel}\nMessage: ${messages}`;
@@ -69,7 +70,53 @@ document.addEventListener('DOMContentLoaded', function() {
       window.open(whatsappLink, '_blank');
   }
 });
-
+const util = {
+        buka: async (button) => {
+            button.disabled = true;
+            document.getElementById('body_santu').style.overflowY = 'scroll';
+            AOS.init();
+            // Assuming audio is defined somewhere
+            audio.play();
+    
+            if (localStorage.getItem('alertClosed')) {
+                document.getElementById('alertDiv').style.display = 'none';
+            }
+    
+            opacity('welcome');
+            document.getElementById('tombol-musik').style.display = 'block';
+            timer();
+    
+            await confetti({
+                origin: { y: 0.8 },
+                zIndex: 1057
+            });
+            // await session.check();
+            await animation();
+        },
+    
+        bukas: async (button) => {
+            button.disabled = true;
+            document.getElementById('body_sanju').style.overflowY = 'scroll';
+            AOS.init();
+            // Assuming audio is defined somewhere
+            audio.play();
+    
+            if (localStorage.getItem('alertClosed')) {
+                document.getElementById('alertDiv').style.display = 'block';
+            }
+    
+            opacity('welcome');
+            document.getElementById('tombol-musik').style.display = 'block';
+            timer();
+    
+            await confetti({
+                origin: { y: 0.8 },
+                zIndex: 1057
+            });
+            // await session.check();
+            await animation();
+        }
+    };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

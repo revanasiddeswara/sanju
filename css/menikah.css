@@ -992,3 +992,13 @@ input[type="submit"] {
 .santu{
   font-size: 16px;
 }
+
+.btn-music {
+  position: fixed;
+  bottom: 9vh !important;
+  right: 2vh !important;
+  z-index: 1055 !important;
+}
+/* .btn{
+  color:#111010
+} */
