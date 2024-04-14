@@ -877,7 +877,7 @@ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75
   
 .formcontainer {
   /* margin-top: 200rem; */
-  max-width: 600px; /* Adjust the maximum width of the container */
+   /* Adjust the maximum width of the container */
   margin: 10rem auto;
   padding: 20px;
 }
