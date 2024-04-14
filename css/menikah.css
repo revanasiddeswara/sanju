@@ -403,6 +403,12 @@ vertical-align: middle;
   max-height: 200px;
   vertical-align: middle;
 }
+.bismillah1 {
+  margin-left: 50%;
+  /* display: inline-block; */
+  max-height: 100px;
+  /* vertical-align: middle; */
+}
 
 #toTop {
   height: 50px;
