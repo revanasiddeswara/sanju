@@ -55,3 +55,26 @@ $(window).load(function() {
   var Body = $("body");
   Body.addClass("preloader-site");
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('orderForm');
+  const confirmationMsg = document.getElementById('confirmation');
+
+  form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+      const formData = new FormData(form);
+      const formDataObject = {};
+      formData.forEach((value, key) => {
+          formDataObject[key] = value;
+      });
+      sendFormData(formDataObject);
+      confirmationMsg.style.display = 'block';
+      form.reset();
+  });
+
+  function sendFormData(formData) {
+      const { name, email, tel,messages } = formData;
+      const message = `Hi Sid's PixelVows\n\nName: ${name}\nEmail: ${email}\nContact: ${tel}\nMessage: ${messages}`;
+      const whatsappLink = `https://wa.me/6362041773/?text=${encodeURIComponent(message)}`;
+      window.open(whatsappLink, '_blank');
+  }
+});
