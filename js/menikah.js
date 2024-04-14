@@ -41,6 +41,13 @@ var music = document.getElementById("bgMusic");
 var playIcon = document.getElementById("playIcon");
 var pauseIcon = document.getElementById("pauseIcon");
 
+// Play background music when the page loads
+window.onload = function() {
+  music.play();
+  playIcon.style.display = "none"; // Hide play icon
+  pauseIcon.style.display = "inline"; // Display pause icon
+};
+
 function toggleMusic() {
   if (music.paused) {
     music.play();
