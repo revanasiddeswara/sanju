@@ -602,7 +602,7 @@ body.preloader-site {
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
-  min-height: 35rem;
+  min-height: 30rem;
 }
 
 
@@ -611,7 +611,7 @@ body.preloader-site {
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
-  min-height: 24rem;
+  min-height: 30rem;
 }
 
 .foto3 {
@@ -619,7 +619,7 @@ body.preloader-site {
   background-size: cover;
   background-position: top;
   background-repeat:no-repeat;
-  min-height: 20rem;
+  min-height: 30rem;
 }
 
 .foto4 {
