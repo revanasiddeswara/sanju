@@ -793,7 +793,10 @@ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75
   
   @media only screen and (max-width: 768px) {
     .welcome {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
+    }
+    .imp{
+      font-size: 1.7rem;
     }
   
     .btn-container {
