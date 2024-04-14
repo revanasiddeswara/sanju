@@ -22,10 +22,10 @@ html {
 .navbar-item {
   line-height: 38px;
   font-weight: 600;
-  text-transform: ;
+  /* text-transform: ; */
   letter-spacing: 1px;
   font-size: 1rem;
-  box-shadow:  ;
+  /* box-shadow:  ; */
 }
 
 .navbar-item.is-active{
@@ -91,7 +91,7 @@ html {
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop {
   line-height: 38px;
   font-weight: 600;
-  text-transform: ;
+  /* text-transform: ; */
   letter-spacing: 1px;
   font-size: 1rem;
 }
@@ -342,7 +342,7 @@ vertical-align: middle;
 .tempat {
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
-  font-size: ;
+  /* font-size: ; */
   margin-bottom: 50px;
 }
 
@@ -793,7 +793,7 @@ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75
   
   @media only screen and (max-width: 768px) {
     .welcome {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   
     .btn-container {
