@@ -804,8 +804,8 @@ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75
     }
   
     .btn-cta1 {
-      width: 80%;
-      max-width: 250px;
+      width: 100%;
+      max-width: 280px;
       margin: 0.5rem auto; /* Center buttons horizontally and add spacing */
     }
   }
