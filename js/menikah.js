@@ -37,55 +37,23 @@ $(document).on("click", 'a[href^="#"]', function(event) {
 window.onscroll = function() {
   scrollFunction();
 };
-console.log("Script loaded");
-const util = {
-  buka: async (button) => {
-    button.disabled = true;
-            document.getElementById('body_santu').style.overflowY = 'scroll';
-            AOS.init();
-            // Assuming audio is defined somewhere
-            audio.play();
-    
-            if (localStorage.getItem('alertClosed')) {
-                document.getElementById('alertDiv').style.display = 'none';
-            }
-    
-            opacity('welcome');
-            document.getElementById('tombol-musik').style.display = 'block';
-            timer();
-    
-            await confetti({
-                origin: { y: 0.8 },
-                zIndex: 1057
-            });
-            // await session.check();
-            await animation();
-        },
-    
-        bukas: async (button) => {
-            button.disabled = true;
-            document.getElementById('body_sanju').style.overflowY = 'scroll';
-            AOS.init();
-            // Assuming audio is defined somewhere
-            audio.play();
-    
-            if (localStorage.getItem('alertClosed')) {
-                document.getElementById('alertDiv').style.display = 'block';
-            }
-    
-            opacity('welcome');
-            document.getElementById('tombol-musik').style.display = 'block';
-            timer();
-    
-            await confetti({
-                origin: { y: 0.8 },
-                zIndex: 1057
-            });
-            // await session.check();
-            await animation();
-        }
-    };
+var music = document.getElementById("bgMusic");
+var playIcon = document.getElementById("playIcon");
+var pauseIcon = document.getElementById("pauseIcon");
 
+function toggleMusic() {
+  if (music.paused) {
+    music.play();
+    playIcon.style.display = "none"; // Hide play icon
+    pauseIcon.style.display = "inline"; // Display pause icon
+  } else {
+    music.pause();
+    playIcon.style.display = "inline"; // Display play icon
+    pauseIcon.style.display = "none"; // Hide pause icon
+  }
+}
+
+console.log("Script loaded");
 document.addEventListener('DOMContentLoaded', function() {
   console.log("DOMContentLoaded event fired"); // Add this line to check if the event is firing
 

@@ -993,12 +993,28 @@ input[type="submit"] {
   font-size: 16px;
 }
 
-.btn-music {
+#musicButton {
   position: fixed;
-  bottom: 9vh !important;
-  right: 2vh !important;
-  z-index: 1055 !important;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
 }
-/* .btn{
-  color:#111010
-} */
+
+#musicButton button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#musicButton button span {
+  font-size: 30px;
+  color: #007bff; /* Play/pause button color */
+}
+
+#playIcon {
+  display: inline;
+}
+
+#pauseIcon {
+  display: none;
+}

@@ -41,7 +41,7 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
-  <body id="body_santu">
+  <body>
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
       <div class="preloader">
@@ -492,11 +492,18 @@
           </div>
       </div>
     </div>
-    <button type="button" id="tombol-musik" style="display: none;"
-    class="btn btn-light btn-sm rounded-circle btn-music" onclick="util.play(this)" data-status="true"
-    data-url="./assets/music/sound.mp3">
-    <i class="fa-solid fa-circle-pause"></i>
-</button>
+    <div id="musicButton">
+      <button onclick="toggleMusic()">
+        <span id="playIcon">&#9658;</span> <!-- Play icon -->
+        <span id="pauseIcon" style="display:none;">&#10074;&#10074;</span> <!-- Pause icon (initially hidden) -->
+      </button>
+    </div>
+  
+    <!-- Audio player -->
+    <audio id="bgMusic" loop>
+      <source src="../music/sound.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
     <!-- End Footer -->
 
     <!-- Scripts -->
