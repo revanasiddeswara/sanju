@@ -637,13 +637,61 @@ body.preloader-site {
   background-repeat:no-repeat;
   min-height: 30rem;
 }
+.fotos1 {
+  background-image:url("../image/santu1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  min-height: 35rem;
+}
 
-@media (max-width: 768px) {
+
+.fotos2 {
+  background-image:  url("../image/santu2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  min-height: 24rem;
+}
+
+.fotos3 {
+  background-image: url("../image/santu3.jpeg");
+  background-size: cover;
+  background-position: top;
+  background-repeat:no-repeat;
+  min-height: 20rem;
+}
+
+.fotos4 {
+  background-image:url("../image/santu4.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat:no-repeat;
+  min-height: 30rem;
+}
+
+.fotos5 {
+  background-image:url("../image/santu5.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  min-height: 30rem;
+}
+
+
+.fotos6 {
+  background-image: url("../image/santu6.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  min-height: 30rem;
+}
+/* @media (max-width: 768px) {
   .foto5 {
-    background-size: contain; /* or any appropriate value */
+    background-size: contain; 
     min-height: 19rem;
   }
-}
+} */
 
 
 .title-foto {
@@ -794,7 +842,7 @@ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75
   .btn-cta1 {
     background-color: #996E6D;
     width: 300px;
-    height: 65px;
+    height: 95px;
     color: white;
     font-size: 1.2rem;
     border: 2px solid #996E6D;
@@ -804,7 +852,7 @@ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75
   }
   
   .btn-cta1:hover {
-    background-color: #854f4e;
+    background-color: #ffffff;
   }
   
   @media only screen and (max-width: 768px) {
@@ -825,3 +873,78 @@ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75
       margin: 0.5rem auto; /* Center buttons horizontally and add spacing */
     }
   }
+
+  
+.formcontainer {
+  /* margin-top: 200rem; */
+  max-width: 600px; /* Adjust the maximum width of the container */
+  margin: 10rem auto;
+  padding: 20px;
+}
+
+#contact {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-heading {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  flex: 1 0 calc(50% - 10px); /* Adjust width for each input group */
+  margin-right: 15px;
+}
+
+.input-group.full-width {
+  flex-basis: 100%;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="tel"],
+.input-group textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#confirmation {
+  display: none;
+  margin-top: 10px;
+  color: #4CAF50;
+}
+
+.insta a{
+  color:#ffffff;
+  margin-right: 1.5rem;
+}
+.insta a:hover{
+  color:#EDD2D1
+}
