@@ -293,7 +293,7 @@ html {
   font-weight: 900;
   color: #996E6D;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   letter-spacing: 0px;
   padding-bottom: 60px;
 }
@@ -499,7 +499,7 @@ body.preloader-site {
   width:  210px;
   height: 65px;
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border-radius: 10px;  
   border-left: 1px solid #6cc751;
   border-right: 1px solid #6cc751;
@@ -732,11 +732,11 @@ body.preloader-site {
 }
 
 .whatsapp {
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   border-radius: 10px;
   border: 1px solid #4dc247;
   align-items: center;
-  margin: 0.5rem;
+  margin: 1rem;
   color: white;
   background: #25D366;
   background: -moz-linear-gradient(45deg, #25D366 0%, #25D366 50%, #34af23 50%, #128C7E 50%, #128C7E 100%);
@@ -744,14 +744,14 @@ body.preloader-site {
 
 
 .instagram1{
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   border-radius: 10px;  
   border-left: 1px solid #6cc751;
   border-right: 1px solid #6cc751;
   border-top: 1px solid #6cc751;
   border-bottom: 1px solid #6cc751;
   align-items: center;
-  margin: 0.5rem;
+  margin: 1rem;
   color: white;
   background: #f09433; 
 background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
@@ -877,9 +877,9 @@ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75
   
 .formcontainer {
   /* margin-top: 200rem; */
-   /* Adjust the maximum width of the container */
-  margin: 10rem auto;
-  padding: 20px;
+  max-width: 600px; /* Adjust the maximum width of the container */
+  margin: 5rem auto;
+  /* padding: 20px; */
 }
 
 #contact {
