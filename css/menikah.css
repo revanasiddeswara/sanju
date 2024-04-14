@@ -293,7 +293,7 @@ html {
   font-weight: 900;
   color: #996E6D;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   letter-spacing: 0px;
   padding-bottom: 60px;
 }
@@ -731,56 +731,88 @@ body.preloader-site {
   padding: 10px;
 }
 
-.whatsapp {
-  font-size: 1.2rem;
-  border-radius: 10px;
-  border: 1px solid #4dc247;
+.btn-social {
+  display: flex;
+  flex-direction: column; /* Buttons stacked vertically by default */
+  justify-content: center;
   align-items: center;
-  margin: 1rem;
-  color: white;
-  background: #25D366;
-  background: -moz-linear-gradient(45deg, #25D366 0%, #25D366 50%, #34af23 50%, #128C7E 50%, #128C7E 100%);
 }
 
-
-.instagram1{
+.btn-social .button {
   font-size: 1.2rem;
-  border-radius: 10px;  
-  border-left: 1px solid #6cc751;
-  border-right: 1px solid #6cc751;
-  border-top: 1px solid #6cc751;
-  border-bottom: 1px solid #6cc751;
+  border-radius: 10px;
   align-items: center;
   margin: 1rem;
   color: white;
-  background: #f09433; 
-background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); */
+  width: 300px; /* Set width for desktop */
+  height: 65px; /* Set height for desktop */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.btn-social .button i {
+  margin-right: 10px; /* Add space between icon and text */
+}
+
+.instagram1 {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); */
+}
+
+.whatsapp {
+  background: #25d366;
+  background: -moz-linear-gradient(
+    45deg,
+    #25d366 0%,
+    #25d366 50%,
+    #34af23 50%,
+    #128c7e 50%,
+    #128c7e 100%
+  );
+}
+
+@media (min-width: 768px) {
+  .btn-social {
+    flex-direction: row; /* Buttons side by side on desktop */
   }
-  .instagram1:hover {
-    color: white;
-    background-color: #59a543;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    border: 2px solid #59a543;
-    width:  290px;
-    height: 65px;
-    align-items: center;
-    margin: 1rem;
+
+  .btn-social .button {
+    width: auto; /* Allow buttons to expand based on content */
   }
-  .whatsapp:hover {
-    color: white;
-    background-color: #59a543;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    border: 2px solid #59a543;
-    width:  300px;
-    height: 65px;
-    align-items: center;
-    margin: 1rem;
-  }
+}
+
+.btn-social .button:hover {
+  color: white;
+  background-color: #59a543;
+  border: 2px solid #59a543;
+}
+
   .visitorCount{
     position: fixed;
     top: 5%; /* Adjust this value to position the text vertically */
