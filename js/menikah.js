@@ -38,6 +38,39 @@ window.onscroll = function() {
   scrollFunction();
 };
 
+console.log("Script loaded");
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("DOMContentLoaded event fired"); // Add this line to check if the event is firing
+
+  const form = document.getElementById('orderForm');
+  const confirmationMsg = document.getElementById('confirmation');
+
+  form.addEventListener('submit', function(event) {
+      console.log("Form submitted"); // Add this line to check if the form submission event is firing
+      event.preventDefault(); // Prevent default form submission
+      const formData = new FormData(form);
+      const formDataObject = {};
+      formData.forEach((value, key) => {
+          formDataObject[key] = value;
+      });
+      console.log("Form data:", formDataObject); // Add this line to check the form data
+      sendFormData(formDataObject);
+      confirmationMsg.style.display = 'block';
+      form.reset();
+  });
+
+  function sendFormData(formData) {
+      const { name, email, tel, messages } = formData;
+      const message = `Hi Sid's PixelVows\n\nName: ${name}\nEmail: ${email}\nContact: ${tel}\nMessage: ${messages}`;
+      console.log("WhatsApp message:", message); // Add this line to check the WhatsApp message
+      // Replace '6362041773' with the correct phone number
+      const whatsappLink = `https://wa.me/6362041773/?text=${encodeURIComponent(message)}`;
+      console.log("WhatsApp link:", whatsappLink); // Add this line to check the WhatsApp link
+      window.open(whatsappLink, '_blank');
+  }
+});
+
+
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("toTop").style.display = "block";
@@ -55,26 +88,4 @@ $(window).load(function() {
   var Body = $("body");
   Body.addClass("preloader-site");
 });
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('orderForm');
-  const confirmationMsg = document.getElementById('confirmation');
 
-  form.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent default form submission
-      const formData = new FormData(form);
-      const formDataObject = {};
-      formData.forEach((value, key) => {
-          formDataObject[key] = value;
-      });
-      sendFormData(formDataObject);
-      confirmationMsg.style.display = 'block';
-      form.reset();
-  });
-
-  function sendFormData(formData) {
-      const { name, email, tel,messages } = formData;
-      const message = `Hi Sid's PixelVows\n\nName: ${name}\nEmail: ${email}\nContact: ${tel}\nMessage: ${messages}`;
-      const whatsappLink = `https://wa.me/6362041773/?text=${encodeURIComponent(message)}`;
-      window.open(whatsappLink, '_blank');
-  }
-});
