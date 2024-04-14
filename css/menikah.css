@@ -1008,7 +1008,7 @@ input[type="submit"] {
 
 #musicButton button span {
   font-size: 30px;
-  color: #ff0000; /* Play/pause button color */
+  color: #EDD2D1 /* Play/pause button color */
 }
 
 #playIcon {
