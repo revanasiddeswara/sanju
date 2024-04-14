@@ -1018,3 +1018,6 @@ input[type="submit"] {
 #pauseIcon {
   display: none;
 }
+.fa-play-circle, .fa-pause-circle-o {
+  margin: 0 5px; /* Adjust the spacing between icons */
+}
