@@ -297,6 +297,15 @@ html {
   letter-spacing: 0px;
   padding-bottom: 60px;
 }
+.main-content .section-titles {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  color: #996E6D;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0px;
+  padding-bottom: 60px;
+}
 .main-content .section-title1 {
   background-image:  url("https://png.pngtree.com/png-vector/20230208/ourmid/pngtree-together-forever-text-with-heart-symbol-png-image_6590768.png");
   background-size: auto;
